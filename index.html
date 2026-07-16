@@ -345,7 +345,7 @@
       </div>
       <div class="hero-meta-item">
         <span class="hero-meta-label">打卡总数</span>
-        <span class="hero-meta-value">13 个</span>
+        <span class="hero-meta-value">8 个</span>
       </div>
     </div>
   </div>
@@ -353,7 +353,7 @@
   <!-- ── Progress Bar ── -->
   <div class="progress-bar">
     <span class="progress-label" id="progressLabel">
-      打卡进度 <strong id="checkedCount">0</strong> / 13
+      打卡进度 <strong id="checkedCount">0</strong> / 8
     </span>
     <div class="progress-track">
       <div class="progress-fill" id="progressFill" style="width:0%"></div>
@@ -527,27 +527,47 @@
 
       <div class="timeline">
 
-        <!-- 13 -->
-        <div class="timeline-item" data-id="13">
+        <!-- 7 -->
+        <div class="timeline-item" data-id="7">
           <div class="timeline-dot"></div>
           <div class="card">
             <div class="card-header">
               <span class="card-time">12:55</span>
               <div class="card-main">
                 <div class="card-title">诗怡从虹桥站出发 🚄</div>
-                <div class="card-subtitle">上海虹桥火车站 · 旅程完美收尾</div>
+                <div class="card-subtitle">上海虹桥火车站</div>
               </div>
               <button class="check-btn">✓</button>
             </div>
             <div class="card-body">
-              <p class="card-desc">上午在汤泉继续悠闲泡池，整理行李，打车前往虹桥站赶车。上海周末漫游，完美收官 🎉</p>
+              <p class="card-desc">上午在汤泉继续悠闲泡池，整理行李。上海周末漫游，完美收官 🎉</p>
               <div class="card-tags">
                 <span class="tag tag-transport">🚄 虹桥火车站出发</span>
               </div>
             </div>
           </div>
         </div>
-
+        
+        <!-- 8 -->
+        <div class="timeline-item" data-id="8">
+          <div class="timeline-dot"></div>
+          <div class="card">
+            <div class="card-header">
+              <span class="card-time">14:00</span>
+              <div class="card-main">
+                <div class="card-title">雪峰从虹桥机场出发 🚄</div>
+                <div class="card-subtitle">上海虹桥机场 · 旅程完美收尾</div>
+              </div>
+              <button class="check-btn">✓</button>
+            </div>
+            <div class="card-body">
+              <p class="card-desc">上午在汤泉继续悠闲泡池，整理行李。上海周末漫游，完美收官 🎉</p>
+              <div class="card-tags">
+                <span class="tag tag-transport">🚄 虹桥机场出发</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div><!-- end 周六 -->
 
@@ -565,9 +585,9 @@
 </div><!-- end .app -->
 
 <script>
-  const TOTAL = 13;
+  const TOTAL = 8;
   const checked = new Set();
-  const emojis = ['🗺️','👟','👟','🏃','🏃','🎯','🎯','🎯','🌟','🌟','🌟','🎊','🎊','🎉'];
+  const emojis = ['🗺️','👟','🏃','🎯','🌟','🎊','🎊','🎉'];
 
   function updateProgress() {
     const n = checked.size;
